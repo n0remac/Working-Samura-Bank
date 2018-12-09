@@ -1,0 +1,14 @@
+{
+    "EMAIL" : null,
+    "OWNER" : "239260347981103105",
+    "PASSWORD" : null,
+    "PREFIXES" : [
+        "|"
+    ],
+    "TOKEN" : "NTA0NzI3MTUyOTc4MDM0Njg4.DrJRWg.P2kP8Et8F99RKm2O025pet8Qg7A",
+    "default" : {
+        "ADMIN_ROLE" : "Banker",
+        "MOD_ROLE" : "Teller",
+        "PREFIXES" : []
+    }
+}

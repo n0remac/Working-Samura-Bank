@@ -1,0 +1,1308 @@
+[27/10/2018 19:39] ERROR owner load 74: No module named 'bs4'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/root/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 4, in <module>
+    from bs4 import BeautifulSoup
+ImportError: No module named 'bs4'
+[27/10/2018 19:53] ERROR owner load 74: [Errno 2] No such file or directory: '/home/cameron/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/root/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 8, in setup
+    bot.add_cog(BankCog(bot))
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 13, in __init__
+    self.centralBank=Bank()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 68, in __init__
+    self.atm=AutomaticTransferMachine(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 139, in __init__
+    self.load()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 220, in load
+    with open('/home/cameron/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json','r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/cameron/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+[27/10/2018 19:58] ERROR owner load 74: [Errno 2] No such file or directory: '/home/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/root/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 8, in setup
+    bot.add_cog(BankCog(bot))
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 13, in __init__
+    self.centralBank=Bank()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 68, in __init__
+    self.atm=AutomaticTransferMachine(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 139, in __init__
+    self.load()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 220, in load
+    with open('/home/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json','r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+[27/10/2018 20:00] ERROR owner load 74: [Errno 2] No such file or directory: '/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/root/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 8, in setup
+    bot.add_cog(BankCog(bot))
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 13, in __init__
+    self.centralBank=Bank()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 68, in __init__
+    self.atm=AutomaticTransferMachine(self)
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 139, in __init__
+    self.load()
+  File "/root/Red-DiscordBot/cogs/samuraiEconomy.py", line 220, in load
+    with open('/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json','r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+[27/10/2018 20:01] ERROR owner load 74: 'NoneType' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+  File "/root/Red-DiscordBot/cogs/owner.py", line 947, in _load_cog
+  File "/usr/lib/python3.5/importlib/__init__.py", line 166, in reload
+    _bootstrap._exec(spec, module)
+  File "<frozen importlib._bootstrap>", line 607, in _exec
+AttributeError: 'NoneType' object has no attribute 'name'
+[27/10/2018 20:02] ERROR owner load 74: 'NoneType' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/root/Red-DiscordBot/cogs/owner.py", line 65, in load
+  File "/root/Red-DiscordBot/cogs/owner.py", line 947, in _load_cog
+  File "/usr/lib/python3.5/importlib/__init__.py", line 166, in reload
+    _bootstrap._exec(spec, module)
+  File "<frozen importlib._bootstrap>", line 607, in _exec
+AttributeError: 'NoneType' object has no attribute 'name'
+[27/10/2018 20:03] ERROR owner load 74: [Errno 2] No such file or directory: '/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+Traceback (most recent call last):
+  File "/root/Projects/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/root/Projects/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/root/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 8, in setup
+    bot.add_cog(BankCog(bot))
+  File "/root/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 13, in __init__
+    self.centralBank=Bank()
+  File "/root/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 68, in __init__
+    self.atm=AutomaticTransferMachine(self)
+  File "/root/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 139, in __init__
+    self.load()
+  File "/root/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 220, in load
+    with open('/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json','r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/Projets/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+[27/10/2018 23:45] ERROR red load_cogs 573: [Errno 2] No such file or directory: '/root/Projects/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 8, in setup
+    bot.add_cog(BankCog(bot))
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 13, in __init__
+    self.centralBank=Bank()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 68, in __init__
+    self.atm=AutomaticTransferMachine(self)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 139, in __init__
+    self.load()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 220, in load
+    with open('/root/Projects/Red-DiscordBot/cogs/samuraiCogs/transactions.json','r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/Projects/Red-DiscordBot/cogs/samuraiCogs/transactions.json'
+[28/10/2018 02:57] ERROR red load_cogs 573: ('expected an indented block', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 186, 6, '\t\telif "|transfer|" in post:\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 186
+    elif "|transfer|" in post:
+       ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('expected an indented block', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 186, 6, '\t\telif "|transfer|" in post:\n'))
+[28/10/2018 03:01] ERROR owner load 69: ('expected an indented block', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 186, 6, '\t\telif "|transfer|" in post:\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 186
+    elif "|transfer|" in post:
+       ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 65, in load
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('expected an indented block', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 186, 6, '\t\telif "|transfer|" in post:\n'))
+[28/10/2018 17:23] ERROR red load_cogs 573: No module named 'bs4'
+Traceback (most recent call last):
+  File "red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 4, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'
+[31/10/2018 05:30] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:31] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:31] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:34] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:34] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 165, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:36] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 166, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:36] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 166, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:38] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 167, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:38] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 167, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:41] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 167, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:41] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 167, in findCommands
+    name=self.pageInfo.get(pNum)[0]
+TypeError: 'int' object is not subscriptable
+[31/10/2018 05:42] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 05:42] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 05:52] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 05:52] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 05:57] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 05:57] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:00] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:00] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:03] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:03] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:05] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 260, 16, '\tdef run(self, 3):\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 260
+    def run(self, 3):
+                  ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 260, 16, '\tdef run(self, 3):\n'))
+[31/10/2018 06:05] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 260, 16, '\tdef run(self, 3):\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 260
+    def run(self, 3):
+                  ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 260, 16, '\tdef run(self, 3):\n'))
+[31/10/2018 06:06] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:06] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:06] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:06] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:09] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:09] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 161, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:12] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:12] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:14] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:14] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:16] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 166, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:16] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 166, in findCommands
+    print(pageInfo)
+NameError: name 'pageInfo' is not defined
+[31/10/2018 06:16] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:16] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:20] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:20] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:21] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170
+    post=self.pageInfo.get(pNum)[1]
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+[31/10/2018 06:21] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170
+    post=self.pageInfo.get(pNum)[1]
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+[31/10/2018 06:22] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170
+    post=self.pageInfo.get(pNum)[1]
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+[31/10/2018 06:22] ERROR owner _reload 156: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 946, in _load_cog
+    mod_obj = importlib.import_module(cogname)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170
+    post=self.pageInfo.get(pNum)[1]
+       ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 150, in _reload
+    self._load_cog(module)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 950, in _load_cog
+    raise CogLoadError(*e.args)
+cogs.owner.CogLoadError: ('invalid syntax', ('/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py', 170, 7, '\t\t\tpost=self.pageInfo.get(pNum)[1]\n'))
+[31/10/2018 06:22] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageIfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageIfo'
+[31/10/2018 06:22] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageIfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageIfo'
+[31/10/2018 06:23] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageIfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageIfo'
+[31/10/2018 06:23] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageIfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageIfo'
+[31/10/2018 06:24] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageInfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageInfo'
+[31/10/2018 06:24] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 169, in findCommands
+    print(self.PageInfo.get(pNum))
+AttributeError: 'AutomaticTransferMachine' object has no attribute 'PageInfo'
+[31/10/2018 06:26] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:26] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:27] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:27] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:32] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:32] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:33] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:33] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:34] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:34] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:35] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 170, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:40] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 171, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:40] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 171, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:40] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 171, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:40] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 171, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:42] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 173, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[31/10/2018 06:42] ERROR red on_command_error 369: Exception in command 'ATM'
+Traceback (most recent call last):
+  File "lib/discord/ext/commands/core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 30, in ATM
+    self.centralBank.ATM()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 127, in ATM
+    self.atm.findCommands()
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/samuraiEconomy.py", line 173, in findCommands
+    post=self.pageInfo.get(pNum)[1]
+IndexError: string index out of range
+[15/11/2018 08:36] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib/aiohttp/connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 695, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 682, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/usr/lib/python3.5/asyncio/selector_events.py", line 402, in sock_connect
+    return (yield from fut)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/asyncio/selector_events.py", line 432, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 110] Connect call failed ('104.16.58.5', 443)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "lib/aiohttp/connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "lib/aiohttp/connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "lib/aiohttp/connector.py", line 624, in _create_direct_connection
+    (req.host, req.port, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 110] Can not connect to discordapp.com:443 [Connect call failed ('104.16.58.5', 443)]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 603, in main
+    yield from bot.connect()
+  File "lib/discord/client.py", line 451, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=True)
+  File "lib/discord/gateway.py", line 198, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "lib/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "lib/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "lib/aiohttp/connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 110] Cannot connect to host discordapp.com:443 ssl:True [Can not connect to discordapp.com:443 [Connect call failed ('104.16.58.5', 443)]]
+[15/11/2018 10:11] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib/discord/gateway.py", line 425, in poll_event
+    msg = yield from self.recv()
+  File "lib/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "lib/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "lib/discord/gateway.py", line 430, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 603, in main
+    yield from bot.connect()
+  File "lib/discord/client.py", line 451, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=True)
+  File "lib/discord/gateway.py", line 202, in from_client
+    timeout=60, loop=client.loop)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 392, in wait_for
+    return fut.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "lib/discord/gateway.py", line 60, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "lib/websockets/py35/client.py", line 19, in __await__
+    return (yield from self.client)
+  File "lib/websockets/client.py", line 210, in connect
+    factory, wsuri.host, wsuri.port, **kwds)
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 651, in create_connection
+    infos = f1.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.5/socket.py", line 732, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+[15/11/2018 10:11] ERROR red load_cogs 573: HTTPSConnectionPool(host='api.imgur.com', port=443): Max retries exceeded with url: /3/credits (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fb4c36fe0f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "lib/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "lib/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.5/socket.py", line 732, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lib/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "lib/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "lib/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "lib/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "lib/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fb4c36fe0f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "lib/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "lib/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "lib/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.imgur.com', port=443): Max retries exceeded with url: /3/credits (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fb4c36fe0f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 570, in load_cogs
+    owner_cog._load_cog(extension)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/owner.py", line 948, in _load_cog
+    self.bot.load_extension(mod_obj.__name__)
+  File "lib/discord/ext/commands/bot.py", line 738, in load_extension
+    lib.setup(self)
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/image.py", line 168, in setup
+    bot.add_cog(Image(bot))
+  File "/home/cameron/Projects/Red-DiscordBot/cogs/image.py", line 22, in __init__
+    self.imgur = ImgurClient(CLIENT_ID, CLIENT_SECRET)
+  File "lib/imgurpython/client.py", line 85, in __init__
+    self.credits = self.get_credits()
+  File "lib/imgurpython/client.py", line 94, in get_credits
+    return self.make_request('GET', 'credits', None, True)
+  File "lib/imgurpython/client.py", line 131, in make_request
+    response = method_to_call(url, headers=header, params=data, data=data)
+  File "lib/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "lib/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "lib/requests/sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "lib/requests/sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "lib/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.imgur.com', port=443): Max retries exceeded with url: /3/credits (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fb4c36fe0f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+[15/11/2018 10:12] ERROR red <module> 634: Fatal exception, attempting graceful logout
+Traceback (most recent call last):
+  File "lib/aiohttp/connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "lib/aiohttp/connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "lib/aiohttp/connector.py", line 589, in _create_direct_connection
+    hosts = yield from self._resolve_host(req.host, req.port)
+  File "lib/aiohttp/connector.py", line 561, in _resolve_host
+    self._resolver.resolve(host, port, family=self._family)
+  File "lib/aiohttp/resolver.py", line 29, in resolve
+    host, port, type=socket.SOCK_STREAM, family=family)
+  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
+    future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.5/socket.py", line 732, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 614, in <module>
+    loop.run_until_complete(main(bot))
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 387, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/home/cameron/Projects/Red-DiscordBot/red.py", line 599, in main
+    bot=not bot.settings.self_bot)
+  File "lib/discord/client.py", line 416, in login
+    yield from getattr(self, '_login_' + str(n))(*args, **kwargs)
+  File "lib/discord/client.py", line 346, in _login_1
+    data = yield from self.http.static_login(token, bot=is_bot)
+  File "lib/discord/http.py", line 258, in static_login
+    data = yield from self.request(Route('GET', '/users/@me'))
+  File "lib/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "lib/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "lib/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "lib/aiohttp/connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno -3] Cannot connect to host discordapp.com:443 ssl:True [Temporary failure in name resolution]
